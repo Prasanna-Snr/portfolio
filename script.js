@@ -244,20 +244,9 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add loading animation
+// Page loaded - no loading screen needed
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
-    
-    // Remove loading screen after a short delay
-    setTimeout(() => {
-        const loadingScreen = document.querySelector('.loading-screen');
-        if (loadingScreen) {
-            loadingScreen.style.opacity = '0';
-            setTimeout(() => {
-                loadingScreen.remove();
-            }, 500);
-        }
-    }, 1000);
 });
 
 // Skill tags animation on hover
@@ -283,55 +272,9 @@ if (profileImg) {
     });
 }
 
-// Add CSS for loading animation and other dynamic styles
+// Add CSS for dynamic styles (no loading screen)
 const style = document.createElement('style');
 style.textContent = `
-    body:not(.loaded) {
-        overflow: hidden;
-    }
-    
-    .loading-screen {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, #2c3e50 0%, #3498db 50%, #9b59b6 100%);
-        z-index: 9999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        transition: opacity 0.5s ease;
-    }
-    
-    .loading-text {
-        color: white;
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-top: 20px;
-        animation: pulse 1.5s infinite;
-    }
-    
-    .loading-spinner {
-        width: 50px;
-        height: 50px;
-        border: 4px solid rgba(255, 255, 255, 0.3);
-        border-top: 4px solid white;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-    }
-    
-    @keyframes pulse {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.5; }
-    }
-    
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-    
     .nav-link.active {
         color: #3498db;
     }
@@ -362,16 +305,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Create loading screen
-document.addEventListener('DOMContentLoaded', () => {
-    const loadingScreen = document.createElement('div');
-    loadingScreen.className = 'loading-screen';
-    loadingScreen.innerHTML = `
-        <div class="loading-spinner"></div>
-        <div class="loading-text">Loading Portfolio...</div>
-    `;
-    document.body.appendChild(loadingScreen);
-});
+// No loading screen - portfolio loads instantly
 
 // Smooth reveal animation for sections
 const revealSections = () => {
