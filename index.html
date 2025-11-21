@@ -2,196 +2,204 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prasanna Sunuwar</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 
 <body>
-    <!-- Navigation -->
+
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
+
             <div class="nav-logo">
                 <a href="#home">Portfolio</a>
             </div>
+
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
+
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-container">
+
             <div class="hero-image">
-                <div class="profile-circle">
-                    <img src="pp.jpg" alt="Prasanna Sunuwar" class="profile-img">
+                <div class="profile-circle glass">
+                    <img src="pp.jpg" class="profile-img" alt="Profile Picture">
                 </div>
             </div>
+
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <br><span class="highlight animated-name">Prasanna<br>Sunuwar</span></h1>
-                <p class="hero-description">I create beautiful mobile apps and web applications using Flutter, Java,
-                    PHP, and Python.</p>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Prasanna Sunuwar</span></h1>
+
+                <p class="hero-description">
+                    I turn data into insights using Machine Learning, Python, and modern analytics.
+                </p>
+
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View my work</a>
                     <a href="#contact" class="btn btn-secondary">Get in touch</a>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate Flutter developer with expertise in mobile app development and full-stack web
-                        development. I love creating cross-platform applications and scalable web solutions that solve
-                        real-world problems.</p>
-                    <div class="skills">
-                        <h3>Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Flutter</span>
-                            <span class="skill-tag">Dart</span>
-                            <span class="skill-tag">Firebase</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">PHP</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">Git</span>
-                        </div>
+
+            <div class="about-content glass">
+                <p>
+                    I’m a data science enthusiast focused on building intelligent systems using Machine Learning,
+                    Deep Learning, Python, and modern analytical techniques.
+                </p>
+
+                <div class="skills">
+                    <h3>Skills</h3>
+
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Git</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-store"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Dokan - E-Commerce Web</h3>
-                        <p>A comprehensive e-commerce web application built with PHP featuring product management,
-                            shopping cart, and user authentication.</p>
-                        <div class="project-tech">
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Prasanna-Snr/dokan" target="_blank"
-                                class="project-link">GitHub</a>
-                        </div>
+
+            <div class="projects-grid" id="projectsGrid">
+
+                <!-- PROJECT 1 -->
+                <div class="project-card glass">
+                    <img src="house.jpg" alt="House Price Prediction" class="project-image-preview">
+
+                    <h3>House Price Prediction</h3>
+                    <p>
+                        A machine learning model that predicts house prices based on location, size, number of rooms,
+                        and other key property features.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Scikit-Learn</span>
+                        <span>Regression</span>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A robust e-commerce platform developed using Java with advanced features for online shopping
-                            and inventory management.</p>
-                        <div class="project-tech">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>MySQL</span>
-                            <span>REST API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Prasanna-Snr/e-commerce" target="_blank"
-                                class="project-link">GitHub</a>
-                        </div>
+                <!-- PROJECT 2 -->
+                <div class="project-card glass">
+                    <img src="crop.jpg" alt="Crop Recommendation System" class="project-image-preview">
+
+                    <h3>Crop Recommendation System</h3>
+                    <p>
+                        Recommends the best crop based on soil nutrients, rainfall, humidity, and pH using ML models.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Random Forest</span>
+                        <span>Pandas</span>
+                        <span>Scikit-Learn</span>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Personal Finance Management</h3>
-                        <p>A Flutter mobile app for tracking expenses, managing budgets, and analyzing financial data
-                            with beautiful charts and insights.</p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>Dart</span>
-                            <span>Firebase</span>
-                            <span>SQLite</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Prasanna-Snr/pfms" target="_blank"
-                                class="project-link">GitHub</a>
-                        </div>
+                <!-- PROJECT 3 -->
+                <div class="project-card glass">
+                    <i class="fas fa-chart-line project-icon"></i>
+                    <h3>Student Score Predictor</h3>
+                    <p>
+                        A regression model predicting student performance based on study hours.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Regression</span>
+                        <span>Scikit-Learn</span>
+                        <span>Python</span>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Todo App</h3>
-                        <p>A clean and intuitive Flutter todo application with task management, categories, and reminder
-                            features for better productivity.</p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>Dart</span>
-                            <span>SQLite</span>
-                            <span>Provider</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Prasanna-Snr/note" target="_blank"
-                                class="project-link">GitHub</a>
-                        </div>
+                <!-- PROJECT 4 -->
+                <div class="project-card glass">
+                    <i class="fas fa-database project-icon"></i>
+                    <h3>Data Visualization Dashboard</h3>
+                    <p>
+                        An interactive dashboard for analyzing datasets with charts and insights.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                        <span>Plotly</span>
                     </div>
                 </div>
+
+                <!-- Additional projects can be added here… -->
+
             </div>
+
+            <!-- SEE MORE BUTTON -->
+            <button id="seeMoreBtn" class="see-more-btn">See More</button>
+
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title">Contact Me</h2>
+
             <div class="contact-content">
+
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div class="contact-item glass">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>Email</h3>
                             <p>prasannasnr@outlook.com</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+
+                    <div class="contact-item glass">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h3>Phone</h3>
                             <p>+977 9745668202</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+
+                    <div class="contact-item glass">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h3>Location</h3>
@@ -199,38 +207,27 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" name="contact" method="POST" data-netlify="true"
-                    netlify-honeypot="bot-field">
+
+                <form class="contact-form glass" name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact">
-                    <div style="display: none;">
-                        <input name="bot-field">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+
+                    <button class="btn btn-primary" type="submit">Send Message</button>
                 </form>
+
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Prasanna Sunuwar. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="https://github.com/Prasanna-Snr" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/prasanna-sunuwar-28ab4b212/" class="social-link"><i
-                            class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
+        <p>© 2025 Prasanna Sunuwar | Data Science Portfolio</p>
+        <div class="social-links">
+            <a href="https://github.com/Prasanna-Snr"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/prasanna-sunuwar-28ab4b212/"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
 
